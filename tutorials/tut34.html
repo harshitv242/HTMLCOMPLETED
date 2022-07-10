@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+        /* box-shadow: 7px 5px 10px green;
+        box-shadow: -7px -5px 10px green; */
+        /* box-shadow: -7px -5px 10px 34px green; */
+        /* box-shadow: -7px -5px 10px 34px rgba(68, 190, 190, 0.5); */
+        box-shadow: inset 3px 5px green;
+
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+    .card h2{
+        /* text-shadow: 3px 4px red; */
+        /* text-shadow: 3px 2px 2px white; */
+        text-shadow: -3px -2px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>This is C++ Course</h2>
+           <p>I have started C++ course which does not mean that we will stop this course. We will continue this course to completion.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque delectus ullam earum eum id ratione expedita corrupti debitis omnis, minus aut culpa natus dicta, sequi pariatur doloribus placeat quia voluptas animi veniam. Quo, sapiente.</p>
+        </div>
+        <div class="card" id="card-2">
+           <h2>This is HTML Course</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora temporibus, iusto, quibusdam pariatur doloribus consectetur hic deleniti magni, eveniet ab ipsum! Sit molestiae mollitia repudiandae quam. Voluptatem assumenda mollitia, molestias quos quaerat hic!</p>
+        </div>
+        <div class="card" id="card-3">
+           <h2>Card3</h2>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ad eveniet itaque iste laudantium eos labore qui dolor quas blanditiis porro quibusdam. Ullam error magni neque obcaecati? Facere vero reiciendis laboriosam nam beatae nesciunt.
+        </div>
+    </div>
+</body>
+</html>
