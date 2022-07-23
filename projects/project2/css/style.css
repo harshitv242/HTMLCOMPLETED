@@ -43,6 +43,7 @@
 
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhai', cursive;
 }
 
 #navbar ul li{
@@ -86,15 +87,55 @@
 #home h1{
     color: white;
     text-align: center;
+    font-family: 'Bree Serif', serif;
 }
 
 #home p{
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
 }
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+}
+
+#services .box img{
+    height: 100px;
+}
+#services{}
+#services{}
+#services{}
+#services{}
+
+
 /* Utility Classes */
 .h-primary{
     font-size: 3.8rem;
     padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{    
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
 }
