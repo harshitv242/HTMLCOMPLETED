@@ -13,13 +13,17 @@
 #navbar{
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0px;
 }
 
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
-    height: 100%;
+    top: 0px;
+    left: 0px;
+    height: 72%;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
@@ -37,9 +41,6 @@
 
 
 /* Navigation Bar: List Styling */
-#navbar{
-    position: relative;
-}
 
 #navbar ul{
     display: flex;
@@ -69,7 +70,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 1047px;
+    height: 1002px;
     justify-content: center;
     align-items: center;
 }
@@ -79,6 +80,8 @@
     position: absolute;
     background: url('../bg1..jpg') no-repeat center center/cover;
     height: 100%;
+    top: 0px;
+    left: 0px;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
@@ -103,6 +106,10 @@
 }
 #services .box{
     border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #eeecec
 }
 
 #services .box img{
