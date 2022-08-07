@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 1002px;
+    height: 1000px;
     justify-content: center;
     align-items: center;
 }
@@ -118,20 +118,44 @@
     display: block
 }
 
-#services{}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
 #services{}
 #services{}
 #services{}
 
+/* Clients Section */
+#client-section{
+    height: 344px;
+}
+
+
+#clients{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+   height: 124px;
+}
 
 /* Utility Classes */
 .h-primary{
+    font-family: 'Bree Serif', serif;
     font-size: 3.8rem;
     padding: 12px;
 }
 
 .h-secondary{
-    font-size: 2.8rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
     padding: 12px;
 }
 
