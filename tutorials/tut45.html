@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,121 @@
     <title>CSS Grid + Media Queries</title>
 </head>
 <style>
-    .container{
+    .container {
         display: grid;
         grid-gap: 1rem;
-
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
     }
-@media only screen and (max-width:300px){
-           body{
+
+    @media only screen and (max-width:300px) {
+        body {
             background-color: red;
-           }
         }
-        
-        @media only screen and (min-width: 300px) and (max-width:500px) {
-            body{
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
             background-color: blue;
-           }
         }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
 
-        @media (min-width:500px) and (max-width:800px) {
-            body{
+    @media (min-width:500px) and (max-width:800px) {
+        body {
             background-color: yellow;
-           }
         }
 
-        @media (min-width:800px)  {
-            body{
-                background-color: green;
-            }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
         }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
 
-        .bdr{
-            border: 2px solid black;
-            padding: 23px;
-            background-color: wheat;
+    @media (min-width:800px) {
+        body {
+            background-color: green;
         }
-        </style>
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
 <body>
-    <div class="container">
-        <aside class="bdr">
-        <nav >
-            Home About Contact
+    <div class="container ">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
         </nav>
         <section class="bdr">
             <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, alias impedit. Dicta minima aspernatur itaque quisquam veritatis repellendus vitae nam animi, nulla, sint reiciendis ex culpa recusandae ducimus nihil hic atque quod! Repellat,quas.lorem122 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas culpa totam, accusantium reprehenderit illo dolores dolor ea officia hic repudiandae nemo, quod, eius laboriosam atque expedita iste blanditiis soluta eum saepe eligendi recusandae similique. Quia nemo asperiores quae at maxime minus blanditiis. Ducimus saepe ipsa dolorum alias, accusantium voluptatem. Odit quam accusamus distinctio officia quidem, veritatis qui! Et quae eveniet est dicta obcaecati! Necessitatibus eveniet nobis mollitia quaerat ex dolorem, voluptas minima voluptatum delectus inventore doloremque. Consequatur sed, amet fugiat quaerat nesciunt accusantium ex quasi laudantium! Rem sunt voluptatem velit aliquam voluptas debitis adipisci ullam tempora repellendus soluta hic accusantium, similique earum fugiat consequatur? Consequuntur nobis culpa omnis dicta. Animi, perspiciatis culpa. Iste dicta beatae eaque recusandae asperiores, veniam adipisci non?</p>
         </section>
         <aside class="bdr">
             <h1>More about us</h1>
         </aside>
     </div>
-        
+    <footer class="bdr">Copyright CodeWithHarshit 2020</footer>
+
 </body>
+
 </html>
